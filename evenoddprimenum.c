@@ -3,7 +3,7 @@
 int main(){
 
     int choice, count;
-    int result = 0, number;
+    int number;
 
     printf("Select operation\n");
     printf("1. Check Even and Odd Number \n");
@@ -33,6 +33,7 @@ int main(){
             }
             break;
             case 2:
+
             break;
             default :
             break;
