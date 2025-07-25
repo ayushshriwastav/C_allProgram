@@ -5,8 +5,8 @@ int main(){
     
     int choice, count;
     int number;
-    int sum = 0, sub = 0 , mul;
-    float div;
+    int sum = 0, sub = 0 , mul = 1;
+    float div = 0.0;
     
     printf("Select operation \n");
     printf("1. Addition(+) \n");
@@ -20,7 +20,7 @@ int main(){
     printf("How much you want number enter : ");
     scanf("%d", &count);
 
-    if(choice < 1){
+    if(choice < 1 || choice > 4){
         printf("This is invalid number. Please Enter a valid countable");
         return 1; 
     }
@@ -48,6 +48,7 @@ int main(){
         else {
             mul *= number;
         }
+        break;
         case 4:
         if (i == 1){
             div = number;
@@ -61,15 +62,28 @@ int main(){
             return 1;
            }
         }
+        break;
         default:
             break;
         }
        
     }
-    printf("The addition is : %d \n", sum);
-    printf("The subtraction is : %d \n", sub);
-    printf("The multiplication is : %d \n", mul);
-    printf("The division is : %d \n", div);
+     switch(choice){
+        case 1:
+        printf("Addition : %d\n",sum);
+        break;
+         case 2:
+        printf("Subtraction : %d\n",sub);
+        break;
+         case 3:
+        printf("Multiplication : %d\n",mul);
+        break;
+        case 4:
+        printf("division : %f\n",div);
+        break;
+        default:
+        break;
+     }
 
     return 0;
 }
