@@ -33,7 +33,24 @@ int main(){
             }
             break;
             case 2:
-
+            if (number <= 1){
+                printf("%d is not a prime number \n", number);
+            }
+            else {
+                int isPrime = 1;   //Leave a flag method 
+                for(int j = 2; j <= number/2;j++){
+                    if(number%j == 0){
+                        isPrime = 0;
+                        break;
+                    }
+                }
+                    if(isPrime){
+                        printf("%d is a prime number \n", number);
+                    }
+                    else{
+                        printf("%d is not a prime number \n", number);
+                    }
+            }
             break;
             default :
             break;
