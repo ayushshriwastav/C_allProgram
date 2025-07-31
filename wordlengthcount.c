@@ -3,6 +3,7 @@
 
 int main(){
     char name[100];
+    int count = 0;
 
     printf("Enter the word or sentence : ");
     scanf("%[^\n]", name);
@@ -14,7 +15,13 @@ int main(){
 
     printf("\n");
 
-    printf("The length : %d", strlen(name));     //first method
+    printf("The length : %lu\n", strlen(name));     //first method: count length
 
+ 
+   for(int i =0; name[i] != '\0';i++){
+      count++;
+   }
+   
+    printf("The lenght(Using Seconf Method) : %d\n", count);
     return 0;
 }
