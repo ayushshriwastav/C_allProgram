@@ -22,6 +22,6 @@ int main(){
       count++;
    }
    
-    printf("The lenght(Using Seconf Method) : %d\n", count);
+    printf("The length(Using Second Method) : %d\n", count);
     return 0;
 }
